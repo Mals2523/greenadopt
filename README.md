@@ -15,7 +15,7 @@ User dashboard with real-time updates
 React 19 · TypeScript · CSS3 · Firebase (Firestore, Auth, Storage)
 
 
-1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/greenadopt.git
