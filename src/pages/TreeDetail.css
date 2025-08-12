@@ -1,0 +1,166 @@
+.tree-detail {
+  padding: 2rem 0;
+}
+
+.tree-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.tree-image-section {
+  position: relative;
+}
+
+.tree-image {
+  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+  color: white;
+  font-size: 8rem;
+  text-align: center;
+  padding: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.tree-status-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  color: #2e7d32;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.tree-info-section h1 {
+  margin-bottom: 0.5rem;
+}
+
+.tree-species {
+  color: #666;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tree-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.tree-stats {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.stat-value {
+  color: #666;
+}
+
+.health-excellent {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.environmental-impact {
+  margin-bottom: 2rem;
+}
+
+.environmental-impact h2 {
+  margin-bottom: 1.5rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.impact-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.impact-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.impact-info h3 {
+  margin: 0 0 0.25rem 0;
+  color: #2e7d32;
+  font-size: 1.25rem;
+}
+
+.impact-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.adoption-section {
+  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.adoption-section h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.adoption-section p {
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .tree-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .tree-image {
+    font-size: 6rem;
+    padding: 2rem;
+  }
+  
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+}

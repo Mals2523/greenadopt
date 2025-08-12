@@ -1,46 +1,179 @@
-# Getting Started with Create React App
+# 🌳 GreenAdopt - Tree Adoption Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time React TypeScript application that connects people with trees for adoption, fostering environmental awareness and community engagement.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Real-time Tree Catalog**: Browse available trees with live updates
+- **Tree Adoption System**: Adopt trees and track their environmental impact
+- **Environmental Impact Tracking**: Monitor CO₂ absorption, oxygen production, and water conservation
+- **Maintenance Records**: Keep track of tree care activities
+- **Photo Gallery**: Upload and view tree photos
+- **User Dashboard**: Manage adopted trees and track contributions
+- **Real-time Database**: Powered by Firebase Firestore for instant updates
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Frontend**: React 19 + TypeScript
+- **Styling**: CSS3 with modern design
+- **Database**: Firebase Firestore (Real-time)
+- **Authentication**: Firebase Auth (ready for implementation)
+- **Storage**: Firebase Storage (for images)
+- **Deployment**: Firebase Hosting (recommended)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📋 Prerequisites
 
-### `npm test`
+- Node.js (v16 or higher)
+- npm or yarn
+- Firebase account
+- Git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Quick Start
 
-### `npm run build`
+### 1. Clone the Repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/your-username/greenadopt.git
+cd greenadopt
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Install Dependencies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+### 3. Set Up Firebase
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/)
+2. Enable Firestore Database
+3. Get your Firebase configuration
+4. Create a `.env` file in the project root:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```env
+REACT_APP_FIREBASE_API_KEY=your-api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your-project-id.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your-project-id.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+REACT_APP_FIREBASE_APP_ID=your-app-id
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 4. Start Development Server
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Visit `http://localhost:3000` to see your app!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+greenadopt/
+├── src/
+│   ├── components/          # Reusable UI components
+│   ├── pages/              # Page components
+│   ├── services/           # Firebase services
+│   ├── hooks/              # Custom React hooks
+│   ├── types/              # TypeScript type definitions
+│   ├── data/               # Mock data and utilities
+│   └── config/             # Firebase configuration
+├── public/                 # Static assets
+├── .env                    # Environment variables (create this)
+└── README.md              # This file
+```
+
+## 🔧 Configuration
+
+### Firebase Setup
+
+Follow the detailed setup guide in `FIREBASE_SETUP.md` for complete Firebase configuration including:
+
+- Firestore Database setup
+- Security rules configuration
+- Authentication setup
+- Storage configuration
+
+### Environment Variables
+
+Create a `.env` file with your Firebase configuration. See the setup guide for detailed instructions.
+
+## 🎯 Key Features Explained
+
+### Real-time Tree Catalog
+- Browse all available trees
+- Real-time updates when trees are adopted
+- Filter by status, species, and location
+
+### Tree Adoption System
+- Submit adoption requests
+- Track adoption status
+- View adopted trees in your dashboard
+
+### Environmental Impact
+- Real-time tracking of environmental metrics
+- CO₂ absorption calculations
+- Oxygen production monitoring
+- Water conservation tracking
+
+### Maintenance Records
+- Log tree maintenance activities
+- Track care history
+- Upload maintenance photos
+
+## 🚀 Deployment
+
+### Deploy to Firebase Hosting
+
+1. Install Firebase CLI:
+```bash
+npm install -g firebase-tools
+```
+
+2. Login to Firebase:
+```bash
+firebase login
+```
+
+3. Initialize Firebase:
+```bash
+firebase init hosting
+```
+
+4. Build and deploy:
+```bash
+npm run build
+firebase deploy
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Firebase for the real-time database infrastructure
+- React team for the amazing framework
+- Unsplash for beautiful tree images
+- The open-source community for inspiration
+
+## 📞 Support
+
+If you have any questions or need help:
+
+1. Check the [Firebase Setup Guide](FIREBASE_SETUP.md)
+2. Open an issue on GitHub
+3. Contact the development team
+
+---
+
+**Made with ❤️ for a greener planet**
