@@ -1,4 +1,5 @@
-🌳 GreenAdopt
+🌳 GreenAdopt 🌳
+
 A React + TypeScript app to adopt and care for trees, with real-time updates via Firebase.
 
 ✨ Features
